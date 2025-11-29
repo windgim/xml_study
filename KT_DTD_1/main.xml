@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE timeTable SYSTEM "timetable.dtd">
+<timeTable>
+    <complexes>
+        <complex code="C001">
+            <name>Ivanov</name>
+            <address>123 Ulitsa Pusheva</address>
+        </complex>
+        <complex code="C002">
+            <name>Sidorov</name>
+            <address>456 Ulitsa Tverskaya</address>
+        </complex>
+    </complexes>
+    <lessons>
+        <lesson no="1" complex="C001">
+            <date>2025-11-29</date>
+            <time>10:00</time>
+        </lesson>
+        <lesson no="2" complex="C002">
+            <date>2025-11-30</date>
+            <time>14:00</time>
+        </lesson>
+    </lessons>
+</timeTable>
