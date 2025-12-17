@@ -13,21 +13,21 @@
             <body>
                 <h1>Наши курсы</h1>
 
-                <h3>Курсы, которые читает Борисов И.О.</h3>
+                <h3>Курсы, которые читает преподаватель Борисов И.О.</h3>
                 <ul>
                     <xsl:for-each select="courses/course[keyes='coursesByTeacher' and .//teacher='Борисов И.О.']">
                         <li><xsl:value-of select="title"/></li>
                     </xsl:for-each>
                 </ul>
 
-                <h3>Курсы, которые используют XML</h3>
+                <h3>Курсы, в которых рассматривается тема XML</h3>
                 <ul>
                     <xsl:for-each select="courses/course[keyes='coursesByKeyword' and keywords/keyword='XML']">
                         <li><xsl:value-of select="title"/></li>
                     </xsl:for-each>
                 </ul>
 
-                <h3>Курсы, которые читает Борисов И.О. и имеют тему XSLT</h3>
+                <h3>Курсы, которые читает преподаватель Борисов И.О., и в которых есть тема XSLT </h3>
                 <ul>
                     <xsl:for-each select="courses/course[keyes='coursesByTeacher' and .//teacher='Борисов И.О.']">
                         <xsl:if test="keywords/keyword='XSLT'">
@@ -42,3 +42,4 @@
     </xsl:template>
 
 </xsl:stylesheet>
+
